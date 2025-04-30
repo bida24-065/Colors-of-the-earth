@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>colours of the earth</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<div class="side-nav">
+        <h4 class="white-text">Navigation</h4>
+        <ul>
+            <li>
+                <a class="waves-effect waves-light white-text" href="#!">
+                    <i class="material-icons left">home</i>Home
+                </a>
+            </li>
+            <li>
+                <a class="waves-effect waves-light white-text" href="#!">
+                    <i class="material-icons left">photo_library</i>Gallery
+                </a>
+            </li>
+            <li>
+                <a class="waves-effect waves-light white-text" href="#!">
+                    <i class="material-icons left">info</i>About
+                </a>
+            </li>
+            <li>
+                <a class="waves-effect waves-light white-text" href="#!">
+                    <i class="material-icons left">email</i>Contact
+                </a>
+              </li>
+             <li>
+              <a class="waves-effect waves-light white-text" href="#!">
+                 <i class="material-icons left"> Clipboard</i>Online order
+            </li>
+        </ul>
+        
+        <div class="divider" style="margin: 20px 0; background-color: rgba(255,255,255,0.2);"></div>
+        
+        <h5 class="white-text">Categories</h5>
+        <div class="collection">
+            <a href="#!" class="collection-item gold-text">Artificial flowers</a>
+            <a href="#!" class="collection-item gold-text">Natural flowers</a>
+            <a href="#!" class="collection-item gold-text">Gift baskets and hampers</a>
+             <a href="#!" class="collection-item gold-text">big flower arrangement</a>
+            <a href="#!" class="collection-item gold-text">medium flower arrangement</a>
+            <a href="#!" class="collection-item gold-text">small flower arrangements</a>
+            <a href="#!" class="collection-item gold-text">different shape flower arrangemrnts</a>
+
+       <div class="main-content">
+      <div class="gallery-column">
+            <h4>Photo Gallery</h4>
+            <p class="flow-text">Browse our collection of beautiful images</p>
+        
+      <div class="row">
+                <div class="col s12 m6 l4">
+                    <div class="card gallery-item hoverable">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/300x200?nature">
+                            <span class="card-title">Artificial flowers</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Beautiful artificial flowers in our store.</p>
+                        </div>
+
+
+     <div class="card-action">
+                            <a href="#">View More</a>
+                            <a href="#" class="right"><i class="material-icons">favorite_border</i></a>
+                        </div>
+                    </div>
+                </div>
+      <div class="col s12 m6 l4">
+                    <div class="card gallery-item hoverable">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/300x200?city">
+                            <span class="card-title">Natural flowers</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Natures different flowers with there camptivating color and sweet scent.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">View More</a>
+                            <a href="#" class="right"><i class="material-icons">favorite_border</i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s12 m6 l4">
+                    <div class="card gallery-item hoverable">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/300x200?people">
+                            <span class="card-title">Big flower arrangments</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Big flower arrangement that can be as the avarage hight of a human.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">View More</a>
+                            <a href="#" class="right"><i class="material-icons">favorite_border</i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s12 m6 l4">
+                    <div class="card gallery-item hoverable">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/300x200?art">
+                            <span class="card-title">Medium flower arrangements</span>
+                        </div>
+                        <div class="card-content">
+                            <p>these flowers are mostly know for being used by bride with each piece crafterd for perfection.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">View More</a>
+                            <a href="#" class="right"><i class="material-icons">favorite_border</i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s12 m6 l4">
+                    <div class="card gallery-item hoverable">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/300x200?travel">
+                            <span class="card-title">Small flower arrangement</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Suitable every room in the house creats that pretty aesthytic in a any place.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">View More</a>
+                            <a href="#" class="right"><i class="material-icons">favorite_border</i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s12 m6 l4">
+                    <div class="card gallery-item hoverable">
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/random/300x200?food">
+                            <span class="card-title">Different sizes of flower arrangements</span>
+                        </div>
+                        <div class="card-content">
+                            <p>These could be used to add shape in events or the house.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">View More</a>
+                            <a href="#" class="right"><i class="material-icons">favorite_border</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="card" style="margin-top: 20px;">
+                <div class="card-content">
+                    <span class="card-title">Recent Comments</span>
+                    <ul class="collection">
+                        <li class="collection-item avatar">
+                            <img src="https://source.unsplash.com/random/50x50?portrait" alt="" class="circle">
+                            <span class="title">Sarah Johnson</span>
+                            <p>"those natural flowers has made my home a peaceful and relaxing space for myself !"</p>
+                            <a href="#!" class="secondary-content"><i class="material-icons">thumb_up</i></a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="https://source.unsplash.com/random/50x50?person" alt="" class="circle">
+                            <span class="title">Mike Chen</span>
+                            <p>"the aesthetic of the artificial flowers had turned my wedding into a fariy tale for my wife."</p>
+                            <a href="#!" class="secondary-content"><i class="material-icons">thumb_up</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
