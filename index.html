@@ -1,463 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete E-Commerce Solution</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Colours of the Earth - Flower arrangements for all occasions in Botswana." />
+    <title>Colours of the Earth | Flower Store</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
+
     <header>
-        <h1>Online Store</h1>
+        <div class="container">
+            <div class="logo">Colours<br>of the<br>Earth</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#order-form">Order</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <section class="hero">
+        <img src="images/hero-banner.jpg" alt="Floral bouquet banner" />
+        <div class="hero-text">
+            <h2>Welcome to Colours of the Earth</h2>
+            <p>Your destination for beautiful blooms for every occasion.</p>
+            <a href="#order-form" class="btn">Order Now</a>
+        </div>
+    </section>
+
     
-    <div class="container">
-
-        <div class="shop-section" id="shop-section">
-            <div class="products" id="products">
-
+    <section class="categories">
+        <h3>Featured Categories</h3>
+        <div class="category-cards">
+            <div class="card">
+                <img src="images/bouquet.jpg" alt="Bouquet" />
+                <h4>Bouquet</h4>
             </div>
-            
-            <div class="cart">
-                <h2 class="cart-title">Your Cart</h2>
-                <div class="cart-items" id="cart-items">
-        
-                    <p id="empty-cart-message">Your cart is empty</p>
-                </div>
-                <div class="cart-total">
-                    Total: $<span id="cart-total">0.00</span>
-                </div>
-                <button class="action-btn" id="proceed-btn" disabled>Proceed to Checkout</button>
+            <div class="card">
+                <img src="images/indoor-plants.jpg" alt="Indoor Plants" />
+                <h4>Indoor Plants</h4>
+            </div>
+            <div class="card">
+                <img src="images/outdoor-plants.jpg" alt="Outdoor Plants" />
+                <h4>Outdoor Plants</h4>
+            </div>
+            <div class="card">
+                <img src="images/corporate-flowers.jpg" alt="Corporate & Event Flowers" />
+                <h4>Corporate & Event Flowers</h4>
             </div>
         </div>
-        
-    
-        <div class="order-form" id="order-form">
-            <h2 class="form-title">Order Information</h2>
-            
-            <form id="checkout-form">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
-                        <div class="error-message" id="name-error">Please enter your name</div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                        <div class="error-message" id="email-error">Please enter a valid email</div>
-                    </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" required>
-                        <div class="error-message" id="phone-error">Please enter your phone number</div>
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Shipping Address</label>
-                        <input type="text" id="address" name="address" required>
-                        <div class="error-message" id="address-error">Please enter your address</div>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label>Delivery Method</label>
-                    <div class="radio-group">
-                        <label class="radio-option">
-                            <input type="radio" name="delivery_method" value="delivery" checked> Delivery
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="delivery_method" value="pickup"> Pickup
-                        </label>
-                    </div>
-                </div>
-                
-                <div class="form-group" id="delivery-date-group">
-                    <label for="delivery_date">Delivery/Pickup Date</label>
-                    <input type="date" id="delivery_date" name="delivery_date" required>
-                    <div class="error-message" id="date-error">Please select a date</div>
-                </div>
-                
-                <div class="form-group">
-                    <label>Payment Method</label>
-                    <div class="radio-group">
-                        <label class="radio-option">
-                            <input type="radio" name="payment_method" value="credit_card" checked> Credit Card
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="payment_method" value="paypal"> PayPal
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="payment_method" value="bank_transfer"> Bank Transfer
-                        </label>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="notes">Special Instructions (Optional)</label>
-                    <textarea id="notes" name="notes" rows="3"></textarea>
-                </div>
-                
-                <div class="terms">
-                    <h3>Terms and Conditions</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.</p>
-                    <div class="checkbox-group">
-                        <label>
-                            <input type="checkbox" id="agree_terms" name="agree_terms" required> 
-                            I agree to the Terms and Conditions
-                        </label>
-                        <div class="error-message" id="terms-error">You must agree to the terms</div>
-                    </div>
-                </div>
-                
-                <div class="order-summary">
-                    <h3 class="summary-title">Order Summary</h3>
-                    <div id="order-summary-items">
-                        
-                    </div>
-                    <div class="summary-item summary-total">
-                        <span>Total:</span>
-                        <span>$<span id="order-total">0.00</span></span>
-                    </div>
-                </div>
-                
-                <div class="step-navigation">
-                    <button type="button" class="action-btn" id="back-to-shop-btn">Back to Shopping</button>
-                    <button type="submit" class="action-btn" id="place-order-btn">Place Order</button>
-                </div>
-            </form>
+    </section>
+
+    <section class="form-section" id="order-form">
+        <h3>Place Your Order</h3>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Type of Flowers (e.g. bouquet, indoor plant)" required>
+            <textarea rows="4" placeholder="Additional Notes or Message"></textarea>
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <section class="about-preview">
+        <div class="container">
+            <h3>About Us</h3>
+            <p>We provide floral arrangements tailored for weddings, birthdays, funerals, and all your special events across Botswana.</p>
+            <a href="about.html" class="btn">Learn More</a>
         </div>
-        
-        
-        <div class="success-message" id="success-message">
-            <div class="success-icon">✓</div>
-            <h2>Thank You for Your Order!</h2>
-            <p>Your order has been placed successfully.</p>
-            <p>We've sent a confirmation email to <span id="confirmation-email"></span></p>
-            <button class="action-btn" id="new-order-btn">Start New Order</button>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:info@coloursoftheearth.co.bw"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p>&copy; 2025 Colours of the Earth | Gaborone, Botswana</p>
+                <p>Call: +267 7123 4567</p>
+            </div>
         </div>
-    </div>
-
-    <script>
-        
-        const products = [
-            {
-                id: 1,
-                name: "Wireless Headphones",
-                price: 99.99,
-                image: "https://via.placeholder.com/300x200?text=Wireless+Headphones"
-            },
-            {
-                id: 2,
-                name: "Smart Watch",
-                price: 199.99,
-                image: "https://via.placeholder.com/300x200?text=Smart+Watch"
-            },
-            {
-                id: 3,
-                name: "Bluetooth Speaker",
-                price: 79.99,
-                image: "https://via.placeholder.com/300x200?text=Bluetooth+Speaker"
-            },
-            {
-                id: 4,
-                name: "Laptop Backpack",
-                price: 49.99,
-                image: "https://via.placeholder.com/300x200?text=Laptop+Backpack"
-            },
-            {
-                id: 5,
-                name: "Wireless Mouse",
-                price: 29.99,
-                image: "https://via.placeholder.com/300x200?text=Wireless+Mouse"
-            },
-            {
-                id: 6,
-                name: "USB-C Hub",
-                price: 39.99,
-                image: "https://via.placeholder.com/300x200?text=USB-C+Hub"
-            }
-        ];
-
-    
-        let cart = [];
-
-    
-        const shopSection = document.getElementById('shop-section');
-        const productsContainer = document.getElementById('products');
-        const cartItemsContainer = document.getElementById('cart-items');
-        const cartTotalElement = document.getElementById('cart-total');
-        const proceedBtn = document.getElementById('proceed-btn');
-        const emptyCartMessage = document.getElementById('empty-cart-message');
-        const orderForm = document.getElementById('order-form');
-        const checkoutForm = document.getElementById('checkout-form');
-        const orderSummaryItems = document.getElementById('order-summary-items');
-        const orderTotalElement = document.getElementById('order-total');
-        const successMessage = document.getElementById('success-message');
-        const backToShopBtn = document.getElementById('back-to-shop-btn');
-        const placeOrderBtn = document.getElementById('place-order-btn');
-        const newOrderBtn = document.getElementById('new-order-btn');
-        const confirmationEmail = document.getElementById('confirmation-email');
-
-
-        function displayProducts() {
-            productsContainer.innerHTML = '';
-            products.forEach(product => {
-                const productCard = document.createElement('div');
-                productCard.className = 'product-card';
-                productCard.innerHTML = `
-                    <img src="${product.image}" alt="${product.name}" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-title">${product.name}</h3>
-                        <p class="product-price">$${product.price.toFixed(2)}</p>
-                        <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
-                    </div>
-                `;
-                productsContainer.appendChild(productCard);
-            });
-        }
-
-        function setupAddToCartButtons() {
-            document.querySelectorAll('.add-to-cart').forEach(button => {
-                button.addEventListener('click', (e) => {
-                    const productId = parseInt(e.target.getAttribute('data-id'));
-                    addToCart(productId);
-                });
-            });
-        }
-
-        
-        function addToCart(productId) {
-            const product = products.find(p => p.id === productId);
-            if (!product) return;
-
-            const existingItem = cart.find(item => item.id === productId);
-            if (existingItem) {
-                existingItem.quantity += 1;
-            } else {
-                cart.push({
-                    id: product.id,
-                    name: product.name,
-                    price: product.price,
-                    quantity: 1
-                });
-            }
-
-            updateCart();
-        }
-
-    
-        function updateCart() {
-            if (cart.length === 0) {
-                emptyCartMessage.style.display = 'block';
-                cartItemsContainer.innerHTML = '';
-                proceedBtn.disabled = true;
-            } else {
-                emptyCartMessage.style.display = 'none';
-                cartItemsContainer.innerHTML = '';
-                
-                cart.forEach(item => {
-                    const cartItemElement = document.createElement('div');
-                    cartItemElement.className = 'cart-item';
-                    cartItemElement.innerHTML = `
-                        <span class="item-name">${item.name}</span>
-                        <div class="quantity-controls">
-                            <button class="quantity-btn minus" data-id="${item.id}">-</button>
-                            <span class="item-quantity">${item.quantity}</span>
-                            <button class="quantity-btn plus" data-id="${item.id}">+</button>
-                        </div>
-                        <span class="item-price">$${(item.price * item.quantity).toFixed(2)}</span>
-                        <button class="remove-btn" data-id="${item.id}">×</button>
-                    `;
-                    cartItemsContainer.appendChild(cartItemElement);
-                });
-
-                proceedBtn.disabled = false;
-            }
-
-
-            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-            cartTotalElement.textContent = total.toFixed(2);
-
-            
-            setupQuantityControls();
-        }
-
-    
-        function setupQuantityControls() {
-            document.querySelectorAll('.quantity-btn.minus').forEach(button => {
-                button.addEventListener('click', (e) => {
-                    const productId = parseInt(e.target.getAttribute('data-id'));
-                    updateQuantity(productId, -1);
-                });
-            });
-
-            document.querySelectorAll('.quantity-btn.plus').forEach(button => {
-                button.addEventListener('click', (e) => {
-                    const productId = parseInt(e.target.getAttribute('data-id'));
-                    updateQuantity(productId, 1);
-                });
-            });
-
-            document.querySelectorAll('.remove-btn').forEach(button => {
-                button.addEventListener('click', (e) => {
-                    const productId = parseInt(e.target.getAttribute('data-id'));
-                    removeFromCart(productId);
-                });
-            });
-        }
-
-    
-        function updateQuantity(productId, change) {
-            const itemIndex = cart.findIndex(item => item.id === productId);
-            if (itemIndex === -1) return;
-
-            cart[itemIndex].quantity += change;
-
-    
-            if (cart[itemIndex].quantity <= 0) {
-                cart.splice(itemIndex, 1);
-            }
-
-            updateCart();
-        }
-
-        
-        function removeFromCart(productId) {
-            cart = cart.filter(item => item.id !== productId);
-            updateCart();
-        }
-        
-        function updateOrderSummary() {
-            orderSummaryItems.innerHTML = '';
-            
-            cart.forEach(item => {
-                const summaryItem = document.createElement('div');
-                summaryItem.className = 'summary-item';
-                summaryItem.innerHTML = `
-                    <span>${item.name} (${item.quantity}x)</span>
-                    <span>$${(item.price * item.quantity).toFixed(2)}</span>
-                `;
-                orderSummaryItems.appendChild(summaryItem);
-            });
-            
-            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-            orderTotalElement.textContent = total.toFixed(2);
-        }
-
-        
-        function validateForm() {
-            let isValid = true;
-            
-            
-            document.querySelectorAll('.error-message').forEach(el => {
-                el.style.display = 'none';
-            });
-            
-        
-            if (!document.getElementById('name').value.trim()) {
-                document.getElementById('name-error').style.display = 'block';
-                isValid = false;
-            }
-            
-            
-            const email = document.getElementById('email').value.trim();
-            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                document.getElementById('email-error').style.display = 'block';
-                isValid = false;
-            }
-            
-            
-            if (!document.getElementById('phone').value.trim()) {
-                document.getElementById('phone-error').style.display = 'block';
-                isValid = false;
-            }
-            
-            if (!document.getElementById('address').value.trim()) {
-                document.getElementById('address-error').style.display = 'block';
-                isValid = false;
-            }
-            
-        
-            if (!document.getElementById('delivery_date').value) {
-                document.getElementById('date-error').style.display = 'block';
-                isValid = false;
-            }
-            
-            
-            if (!document.getElementById('agree_terms').checked) {
-                document.getElementById('terms-error').style.display = 'block';
-                isValid = false;
-            }
-            
-            return isValid;
-        }
-
-        
-        function showSuccessMessage(email) {
-            shopSection.style.display = 'none';
-            orderForm.style.display = 'none';
-            successMessage.style.display = 'block';
-            confirmationEmail.textContent = email;
-        }
-
-        
-        function resetForNewOrder() {
-            cart = [];
-            updateCart();
-            checkoutForm.reset();
-            shopSection.style.display = 'flex';
-            orderForm.style.display = 'none';
-            successMessage.style.display = 'none';
-        }
-
-
-        function init() {
-            displayProducts();
-            setupAddToCartButtons();
-            updateCart();
-            
-    
-            proceedBtn.addEventListener('click', () => {
-                shopSection.style.display = 'none';
-                orderForm.style.display = 'block';
-                updateOrderSummary();
-            });
-            
-            
-            backToShopBtn.addEventListener('click', () => {
-                shopSection.style.display = 'flex';
-                orderForm.style.display = 'none';
-            });
-            
-               
-            checkoutForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                
-                if (validateForm()) {
-                    
-                    const email = document.getElementById('email').value.trim();
-                    
-                    
-                    placeOrderBtn.disabled = true;
-                    placeOrderBtn.textContent = 'Processing...';
-                    
-                    setTimeout(() => {
-                        showSuccessMessage(email);
-                        placeOrderBtn.disabled = false;
-                        placeOrderBtn.textContent = 'Place Order';
-                    }, 1500);
-                }
-            });
-            
-            
-            newOrderBtn.addEventListener('click', resetForNewOrder);
-        }
-
-        
-        init();
-    </script>
+    </footer>
 </body>
 </html>
+
