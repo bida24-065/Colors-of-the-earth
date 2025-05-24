@@ -21,9 +21,9 @@
             align-items: center;
         }
         .logo img {
-            width: 120px;
+            width: 200px;
             height: auto;
-            border-radius: 50%;
+            border-radius: 60%;
         }
         nav ul {
             list-style: none;
@@ -40,7 +40,7 @@
             width: 100%;
             display: block;
             margin: 0 auto;
-            max-height: 400px;
+            max-height: 350px;
             object-fit: cover;
         }
         .btn {
@@ -108,11 +108,11 @@
           
         .slideshow-container {
             position: relative;
-            width: 100%;
+            width: 90%;
         }
         .slideshow-container img {
-            width: 100%;
-            border-radius: 5px;
+            width: 90%;
+            border-radius: 4px;
         }
         .slide {
             display: none;
