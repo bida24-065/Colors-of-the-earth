@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Colours of the Earth - Flower arrangements for all occasions in Botswana." />
     <title>Colours of the Earth | Flower Store</title>
-    <link rel="stylesheet" href="styles.css">
     
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <!-- Header Section -->
     <header>
-            <div class="container">
+        <div class="container">
             <div class="logo">
-            <img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\logo-transparent.png" alt="Logo" class="logo">
+                <img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\logo-transparent.png" alt="Colours of the Earth Logo">
             </div>
             <nav>
                 <ul class="nav-links">
@@ -27,37 +27,74 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Welcome to Colours of the Earth</h2>
-            <p>Your destination for beautiful blooms for every occasion.</p>
-            <a href="#order-form" class="btn">Order Now</a>
-        </div>
-    </section>
+    <!-- Body Image -->
+    <img class="body-image" src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\banner.jfif" alt="Floral body image" />
 
-    
+    <!-- Featured Categories Slideshow -->
     <section class="categories">
-        <h3>Featured Categories</h3>
-        <div class="category-cards">
-            <div class="card">
-                <img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\download.jfif" alt="Bouquet" />
-                <h4>Bouquet</h4>
-            </div>
-            <div class="card">
-                <img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\indoor plant.jfif" alt="Indoor Plants" />
-                <h4>Indoor Plants</h4>
-            </div>
-            <div class="card">
-                <img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\outdoor plant.jfif" alt="Outdoor Plants" />
-                <h4>Outdoor Plants</h4>
-            </div>
-            <div class="card">
-                <img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\event flowers.jfif" alt="Corporate & Event Flowers" />
-                <h4>Corporate & Event Flowers</h4>
+    <script>
+        function startSlideshow(containerClass) {
+            let index = 0;
+            const container = document.querySelector(`.${containerClass} .slideshow-container`);
+            const slides = container.querySelectorAll('.slide');
+            function showSlide() {
+                slides.forEach(slide => slide.classList.remove('active'));
+                slides[index].classList.add('active');
+                index = (index + 1) % slides.length;
+            }
+            showSlide();
+            setInterval(showSlide, 3000);
+        }
+        window.onload = function () {
+            ['bouquet', 'indoor', 'outdoor', 'corporate'].forEach(startSlideshow);
+        };
+    </script>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2em;">
+
+        <div class="category bouquet" style="background: #fff0f5; padding: 1em; border-radius: 10px; width: 300px;">
+            <h4>Bouquet</h4>
+            <div class="slideshow-container">
+                <div class="slide active"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\download.jfif" alt="Bouquet 1"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\peonies.jfif" alt="Bouquet 2"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\tulip.png.jfif" alt="Bouquet 3"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\hydrangea.jfif" alt="Bouquet 4"></div>
             </div>
         </div>
+
+        <div class="category indoor" style="background: #fff0f5; padding: 1em; border-radius: 10px; width: 300px;">
+            <h4>Indoor Plants</h4>
+            <div class="slideshow-container">
+                <div class="slide active"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\indoor plants.jfif" alt="Indoor 1"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\art plant.jfif" alt="Indoor 2"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\room plant.jfif" alt="Indoor 3"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\plant.jfi" alt="Indoor 4"></div>
+            </div>
+        </div>
+
+        <div class="category outdoor" style="background: #fff0f5; padding: 1em; border-radius: 10px; width: 300px;">
+            <h4>Outdoor Plants</h4>
+            <div class="slideshow-container">
+                <div class="slide active"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\outdoor plant.jfif" alt="Outdoor 1"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\out plant.jfif" alt="Outdoor 2"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\planting.jfif" alt="Outdoor 3"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\flower out.jfif" alt="Outdoor 4"></div>
+            </div>
+        </div>
+
+        <div class="category corporate" style="background: #fff0f5; padding: 1em; border-radius: 10px; width: 300px;">
+            <h4>Corporate & Event Flowers</h4>
+            <div class="slideshow-container">
+                <div class="slide active"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\artificial.jfif" alt="Corporate 1"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\event flowers.jfif" alt="Corporate 2"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\wallplants.jfif" alt="Corporate 3"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\elegent.jfif" alt="Corporate 4"></div>
+            </div>
+        </div>
+    </div>
+</section>
     </section>
 
+    <!-- Order Form -->
     <section class="form-section" id="order-form">
         <h3>Place Your Order</h3>
         <form>
@@ -69,6 +106,7 @@
         </form>
     </section>
 
+    <!-- About Us Preview -->
     <section class="about-preview">
         <div class="container">
             <h3>About Us</h3>
@@ -77,7 +115,7 @@
         </div>
     </section>
 
-
+    <!-- Footer Section -->
     <footer>
         <div class="footer-container">
             <div class="footer-links">
@@ -87,7 +125,7 @@
             </div>
             <div class="footer-contact">
                 <p>&copy; 2025 Colours of the Earth | Gaborone, Botswana</p>
-                <p>Call: +267 77359731</p>
+                <p>Call: +267 7735 9731</p>
             </div>
         </div>
     </footer>
