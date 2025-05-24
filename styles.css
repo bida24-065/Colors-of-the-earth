@@ -106,3 +106,17 @@
             cursor: pointer;
         }
           
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+        }
+        .slideshow-container img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
