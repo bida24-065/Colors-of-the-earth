@@ -19,38 +19,10 @@
             justify-content: space-between;
             align-items: center;
         }
-        .logo-image-container {
-            font-size: 1.8em;
-            font-weight: bold;
-            background-color: #ffcba4;
-            padding: 0.5em 1em;
+         .logo img {
+            width: 120px;
+            height: auto;
             border-radius: 50%;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 80px;
-            height: 80px;
-        }
-        
-        .oval-logo {
-            width: 60px; 
-            height: 60px;
-            object-fit: contain;
-            border-radius: 50%;
-            transition: all 0.3s ease;
-        }
-        
-        .oval-logo:hover {
-            transform: rotate(-5deg) scale(1.05);
-        }
-        
-        .logo-text {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            color: #e8a87c;
-            margin-left: 12px;
-            font-weight: 700;
         }
         nav ul {
             list-style: none;
