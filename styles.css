@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #ff80ab; /* darker pink than body */
+  background-color: #ff80ab; 
   background-image: url("images/header-background.jpg");
   background-size: cover;
   background-position: center;
@@ -139,35 +139,42 @@ button:hover {
   font-weight: bold;
 }
 
-.slideshow-container {
+
+.slideshow {
   position: relative;
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto;
   overflow: hidden;
-  height: 150px;
-  width: 250px;
-  margin: auto;
-  border-radius: 8px;
 }
+
 
 .slide {
   display: none;
-  position: absolute;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  animation: fade 1s ease-in-out;
+  transition: opacity 0.5s ease; 
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
 
 .slide.active {
   display: block;
+  opacity: 1;
+  position: relative; 
 }
 
-@keyframes fade {
+.slide.active.fade {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* Neatly align image in About page */
 .about-img {
   display: block;
   margin: 0 auto 1em auto;
@@ -177,7 +184,7 @@ button:hover {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Style pricing table in About page */
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -207,7 +214,7 @@ td {
 }
 
 footer {
-  background-color: #ff99b6; /* different pink from section */
+  background-color: #ff99b6; 
   padding: 1.5em;
   text-align: center;
   margin-top: 3em;
