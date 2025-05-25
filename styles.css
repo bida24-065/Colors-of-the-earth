@@ -17,15 +17,20 @@ align-items: center;
 }
 
  .logo img {
-      height: 60px;
-      width: auto;
-    }
-
+ width: 150px;
+  height: 100px; 
+  border-radius: 50%;
+ }
 nav a {
 color: maroon;
 text-decoration: none;
 margin: 0 10px;
 font-weight: bold;
+  background-image: url('C:\Users\R'Jay Mobiles'\Documents\root folder\img\banner.jfif '); 
+  background-size: cover;     
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1rem; 
 }
 
 .categories {
