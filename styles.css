@@ -23,18 +23,6 @@ margin: 0 10px;
 font-weight: bold;
 }
 
-
-logo img {
-    width: 30px;   
-    height: 20px;  
-    object-fit: cover;
-    border-radius: 15% / 10%;
-    border: 2px solid #050505;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-
-
 .categories {
     padding: 2em;
     background-color: #fff8fc; 
