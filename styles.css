@@ -16,6 +16,11 @@ display: flex;
 align-items: center;
 }
 
+ .logo img {
+      height: 60px;
+      width: auto;
+    }
+
 nav a {
 color: maroon;
 text-decoration: none;
