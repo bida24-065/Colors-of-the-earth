@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form | Colours of the Earth</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+       <div class="logo">
+      <img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\logo-transparent.png" alt="Logo" />
+    </div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contactr</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="form.html">Order</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Order Form</h2>
+    <p>Please complete the form below to place your flower or floral arrangement order. We will contact you shortly to confirm the details and delivery schedule.</p>
+
+    <form action="#" method="POST">
+      <input type="text" name="fullname" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="address" placeholder="Delivery Address" required>
+      <select name="product" required>
+        <option value="">-- Select Flower Type --</option>
+        <option value="indoor">Indoor Plant</option>
+        <option value="outdoor">Outdoor Plant</option>
+        <option value="wedding">Wedding Floral Set</option>
+        <option value="corporate">Corporate Event Decor</option>
+      </select>
+      <input type="date" name="deliverydate" required>
+      <textarea name="message" rows="4" placeholder="Additional Notes or Instructions (Optional)"></textarea>
+      <button type="submit">Submit Order</button>
+    </form>
+
+    <p class="note">Please note: Delivery is available across Botswana. Orders should be placed at least 24 hours in advance.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Colours of the Earth | Gaborone, Botswana</p>
+    <p>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="mailto:info@coloursoftheearth.co.bw"><i class="fas fa-envelope"></i> Email</a>
+    </p>
+  </footer>
+</body>
+</html>

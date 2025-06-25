@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Colours of the Earth - Flower arrangements for all occasions in Botswana." />
+    <title>Colours of the Earth | Flower Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+            <nav>
+                <div class="logo">
+      <img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\logo-transparent.png" alt="Logo" />
+    </div>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="form.html">Order</a>
+            
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Featured Categories Slideshow -->
+    <section class="categories">
+    <script>
+        function startSlideshow(containerClass) {
+            let index = 0;
+            const container = document.querySelector(`.${containerClass} .slideshow-container`);
+            const slides = container.querySelectorAll('.slide');
+            function showSlide() {
+                slides.forEach(slide => slide.classList.remove('active'));
+                slides[index].classList.add('active');
+                index = (index + 1) % slides.length;
+            }
+            showSlide();
+            setInterval(showSlide, 3000);
+        }
+        window.onload = function () {
+            ['bouquet', 'indoor', 'outdoor', 'corporate'].forEach(startSlideshow);
+        };
+    </script>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2em;">
+
+        <div class="category bouquet" style="background: #fff0f5; padding: 1em; border-radius: 10px; width: 300px;">
+            <h4>Bouquet</h4>
+            <div class="slideshow-container">
+                <div class="slide active"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\download.jfif" alt="Bouquet 1"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\peonies.jfif" alt="Bouquet 2"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\tulip.png.jfif" alt="Bouquet 3"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\hydrangea.jfif" alt="Bouquet 4"></div>
+            </div>
+        </div>
+
+        <div class="category indoor" style="background: #fff0f5; padding: 1em; border-radius: 10px; width: 300px;">
+            <h4>Indoor Plants</h4>
+            <div class="slideshow-container">
+                <div class="slide active"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\indoor plants.jfif" alt="Indoor 1"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\art plant.jfif" alt="Indoor 2"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\room plant.jfif" alt="Indoor 3"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\plant.jfif" alt="Indoor 4"></div>
+            </div>
+        </div>
+
+        <div class="category outdoor" style="background: #fff0f5; padding: 1em; border-radius: 10px; width: 300px;">
+            <h4>Outdoor Plants</h4>
+            <div class="slideshow-container">
+                <div class="slide active"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\outdoor plant.jfif" alt="Outdoor 1"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\out plant.jfif" alt="Outdoor 2"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\planting.jfif" alt="Outdoor 3"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\flower out.jfif" alt="Outdoor 4"></div>
+            </div>
+        </div>
+
+        <div class="category corporate" style="background: #fff0f5; padding: 1em; border-radius: 10px; width: 300px;">
+            <h4>Corporate & Event Flowers</h4>
+            <div class="slideshow-container">
+                <div class="slide active"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\artificial.jfif" alt="Corporate 1"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\event flowers.jfif" alt="Corporate 2"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\wallplants.jfif" alt="Corporate 3"></div>
+                <div class="slide"><img src="C:\Users\R'Jay Mobiles'\Documents\root folder\img\elegent.jfif" alt="Corporate 4"></div>
+            </div>
+        </div>
+    </div>
+</section>
+    </section>
+
+    <!-- Order Form -->
+    <section class="form-section" id="order-form">
+        <h3>Place Your Order</h3>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Type of Flowers (e.g. bouquet, indoor plant)" required>
+            <textarea rows="4" placeholder="Additional Notes or Message"></textarea>
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <!-- About Us Preview -->
+    <section class="about-preview">
+        <div class="container">
+            <p>We provide floral arrangements tailored for weddings, birthdays, funerals, and all your special events across Botswana.</p>
+            <a href="about.html" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+         <p>&copy; 2025 Colours of the Earth | Gaborone, Botswana</p>
+    <p>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="mailto:info@coloursoftheearth.co.bw"><i class="fas fa-envelope"></i> Email</a>
+    </p>
+    </footer>
+</body>
+</html>
+
