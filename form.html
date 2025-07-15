@@ -9,7 +9,6 @@
 </head>
 
 
-  
 <body>
   <header>
     <nav>
@@ -44,50 +43,7 @@
       <textarea name="message" rows="4" placeholder="Additional Notes or Instructions (Optional)"></textarea>
       <button type="submit">Submit Order</button>
     </form>
-    <div class="success-message" id="successMessage">
-        Thank you for your submission! We'll get back to you soon.
-    </div>
-    
-    <script>
-        document.getElementById('myForm').addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent the form from submitting normally
-            
-            // Reset error messages
-            document.querySelectorAll('.error').forEach(el => el.style.display = 'none');
-            
-            // Get form values
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value.trim();
-            
-            let isValid = true;
-            
-            // Validate name
-            if (name === '') {
-                document.getElementById('nameError').style.display = 'block';
-                isValid = false;
-            }
-            
-            // Validate email
-            if (email === '' || !email.includes('@')) {
-                document.getElementById('emailError').style.display = 'block';
-                isValid = false;
-            }
-            
-            // Validate message
-            if (message === '') {
-                document.getElementById('messageError').style.display = 'block';
-                isValid = false;
-            }
-            
-            // If form is valid, show success message
-            if (isValid) {
-                document.getElementById('successMessage').style.display = 'block';
-                // Optional: Reset the form
-                // document.getElementById('myForm').reset();
-            }
-        });
-    </script>
+
     <p class="note">Please note: Delivery is available across Botswana. Orders should be placed at least 24 hours in advance.</p>
   </main>
 
