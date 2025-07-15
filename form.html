@@ -7,6 +7,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
+
+<script>
+function handleSubmit(event) {
+  event.preventDefault(); // Prevent form from reloading the page
+
+  // Optionally: validate form here if needed
+
+  // Show success message
+  document.getElementById("successMessage").style.display = "block";
+
+  // Optional: clear the form
+  document.getElementById("contactForm").reset();
+
+  return false; // Prevent actual submission
+}
+</script>
+  
 <body>
   <header>
     <nav>
