@@ -350,6 +350,10 @@ form button {
 form button:hover {
     background-color: #902050;
 }
+
+
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
